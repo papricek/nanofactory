@@ -1,0 +1,142 @@
+body {
+    text-align: center;
+    color: #666666;
+    font-family: 'Conv_Cantarell-Regular', Georgia, Times, serif;
+}
+
+::-moz-selection {
+    background: #c50d03;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #c50d03;
+    color: #fff;
+    text-shadow: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    padding: 30px;
+}
+
+.container {
+    position: relative;
+    width: 296px;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Conv_Cantarell-Regular', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #211f20;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #c50d03;
+}
+
+header {
+    padding-bottom: 30px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header.main h1 a:hover {
+    color: inherit;
+}
+
+header #logo img {
+    margin-left: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+}
+
+header h1 span {
+    display: block;
+}
+
+header h1 span.small {
+    color: #666666;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.37em;
+}
+
+header.main h1 span.big {
+    color: #211f20;
+    padding-top: 10px;
+}
+
+article {
+    font-size: 1.4em;
+    padding-bottom: 40px;
+}
+
+article p {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+article dl {
+    margin-top: 10px;
+}
+
+article dt, article dd {
+    display: inline;
+    font-size: 0.8em;
+}
+
+article li {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+article ul {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+article dt {
+    font-weight: bold;
+}
+
+article p, article li, article dd {
+    line-height: 1.4em;
+}
+
+@font-face {
+    font-family: 'Conv_Radley';
+    src: url('/fonts/Radley.eot');
+    src: local('☺'), url('/fonts/Radley.woff') format('woff'), url('/fonts/Radley.ttf') format('truetype'), url('/fonts/Radley.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Cantarell-Regular';
+    src: url('/fonts/Cantarell-Regular.eot');
+    src: local('☺'), url('/fonts/Cantarell-Regular.woff') format('woff'), url('/fonts/Cantarell-Regular.ttf') format('truetype'), url('/fonts/Cantarell-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

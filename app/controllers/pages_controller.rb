@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
 
-  def index
+  layout lambda { current_site.folder }
 
+  def index
   end
 
 end

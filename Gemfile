@@ -1,13 +1,14 @@
 ruby "2.0.0"
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.beta1'
-
 gem 'pg'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 1.0.1'
 
-# Gems used only for assets and not required
-# in production environments by default.
+gem 'configatron'
+
 group :assets do
   gem 'sass-rails',   '~> 4.0.0.beta1'
   gem 'coffee-rails', '~> 4.0.0.beta1'
@@ -15,8 +16,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 1.0.1'
-
-
+group :development do
+  gem 'thin'
+  gem 'sqlite3'
+end
