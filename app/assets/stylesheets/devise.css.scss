@@ -1,0 +1,64 @@
+.sorcery {
+  br {
+    display: none;
+  }
+  > h2, > h3 {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: $baseLineHeight * 1.5;
+    font-size: $baseFontSize * 1.5;
+    line-height: $baseLineHeight * 2;
+    color: $grayDark;
+    border: 0;
+    border-bottom: 1px solid #eee;
+  }
+  > h2, >h3 {
+    margin-bottom: $baseLineHeight;
+  }
+  form {
+    label[for=user_remember_me] {
+      display: inline;
+      margin-left:0.5em;
+      margin-top: 0.5em;
+    }
+    input[type=submit] {
+      @extend .btn-primary;
+      @extend .btn-large;
+      margin: 1em 0;
+    }
+    i {
+      display: block;
+    }
+    // Errors
+    .error_notification {
+      font-size: 1.3em;
+    }
+    #error_explanation {
+      h2 {
+        line-height: $baseLineHeight;
+        font-size: 14px;
+        @extend .alert-error;
+      }
+      ul {
+        margin-bottom: 0;
+      }
+      @extend .alert;
+      @extend .alert-error;
+    }
+    .field_with_errors {
+      @extend .control-group;
+      @extend .error;
+     .error {
+        padding-left: 0.5em;
+        color: $red;
+      }
+    }
+  }
+  a:last-of-type:after {
+    content: '';
+  }
+  a:after {
+    content: '\0020\007c';
+  }
+}

@@ -1,0 +1,5 @@
+cs:
+  mailers:
+    common:
+      dear_user: Milý uživateli
+      have_a_nice_day: Pěkný den

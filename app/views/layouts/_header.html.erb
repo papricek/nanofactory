@@ -1,0 +1,37 @@
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+
+      <div class="navbar-login">
+
+        <div id="nav">
+          <% if logged_in? %>
+            <%= link_to t('users.profile'), edit_user_path(current_user.id) %>
+            &nbsp;|&nbsp;
+            <%= link_to t('users.logout'), logout_path %>
+          <% else %>
+            <%= form_tag user_sessions_path, :method => :post, class: 'form-inline' do %>
+              <%= text_field_tag :email, '',
+                                 class: 'input-small',
+                                 placeholder: t('users.placeholder_email') %>
+              <%= password_field_tag :password, '',
+                                     class: 'input-small',
+                                     placeholder: t('users.placeholder_password') %>
+              <%= submit_tag t('users.login'), class: 'btn' %>
+              <label class="checkbox">
+                <input type="checkbox"> <%= t('users.remember_me') %>
+              </label>
+
+            <% end %>
+
+          <% end %>
+        </div>
+      </div>
+
+      <h1>
+        <%= link_to t('common.name'), root_path, :class => "logo" %>
+      </h1>
+
+    </div>
+  </div>
+</div>

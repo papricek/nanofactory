@@ -7,5 +7,10 @@ class Site
     @title = title
     @folder = folder || host
   end
+  
+  def self.find_by_host(host)
+    host = host.gsub(/www\./, '')
+    new(configatron.sites.detect { |s| s[:host] == host })
+  end
 
 end

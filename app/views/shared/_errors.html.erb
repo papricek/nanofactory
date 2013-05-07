@@ -1,0 +1,14 @@
+<% errors = object.errors %>
+<% skip_prefix ||= false %>
+<% errors = errors.reject { |field, message| field =~ /^#{skip_prefix}/ } if skip_prefix %>
+
+<% if errors.any? %>
+  <div class="alert alert-error">
+    <a class="close" data-dismiss="alert">&#215;</a>
+    <ul>
+      <% errors.each do |field, message| %>
+        <%= content_tag :li, full_error_message(object, field, message) %>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

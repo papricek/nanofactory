@@ -1,0 +1,26 @@
+$darkViolet: #48036F;
+$lightViolet: #7109AA;
+$lightGreen: #6c9119;
+$darkGreen: #105f59;
+$lightGrey: #fafafa;
+
+$bodyBackground: white;
+$textColor: #1c1a1a;
+$linkColor: $darkViolet;
+$linkColorHover: $lightViolet;
+
+@mixin round-bottom($radius: 5px){
+  -moz-border-radius-bottomright: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  border-radius: 0 0 $radius $radius;
+}
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import "devise";
+@import "generic";
+@import "containers/header";
+@import "containers/pages";
+@import "modules/forms";
