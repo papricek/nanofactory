@@ -11,6 +11,7 @@ cs:
     placeholder_email: Email
     placeholder_password: Heslo
     remember_me: Trvalé přihlášení
+    administration: administrace
   sessions:
     not_authenticated: Nejste přihlášeni
     not_admin: Nejste přihlášeni jako admin

@@ -1,0 +1,52 @@
+$lightYellow: #f3f2ad;
+$lightGreen: #87c234;
+$darkGreen: #58752f;
+
+#admin-navigation {
+  font-family: Conv_Vegur-Regular;
+
+  #corner-navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $lightYellow;
+    float: right;
+
+    a {
+      display: block;
+      padding: 7px 20px 12px 20px;
+      font-size: 1.2em;
+    }
+
+  }
+  #wide-navigation {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@font-face {
+  font-family: 'Conv_Vegur-Regular';
+  src: url('/fonts/Vegur-Regular.eot');
+  src: local('☺'), url('/fonts/Vegur-Regular.woff') format('woff'), url('/fonts/Vegur-Regular.ttf') format('truetype'), url('/fonts/Vegur-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_Vegur-Light';
+  src: url('/fonts/Vegur-Light.eot');
+  src: local('☺'), url('/fonts/Vegur-Light.woff') format('woff'), url('/fonts/Vegur-Light.ttf') format('truetype'), url('/fonts/Vegur-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_Vegur-Bold';
+  src: url('/fonts/Vegur-Bold.eot');
+  src: local('☺'), url('/fonts/Vegur-Bold.woff') format('woff'), url('/fonts/Vegur-Bold.ttf') format('truetype'), url('/fonts/Vegur-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -37,8 +37,6 @@ GEM
     arel (4.0.0)
     atomic (1.1.9)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass (2.3.1.1)
-      sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -140,7 +138,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
   coffee-rails (~> 4.0.0.beta1)
   configatron
   htmlentities

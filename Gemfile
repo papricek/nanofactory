@@ -7,7 +7,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 gem 'sorcery', git: 'git://github.com/NoamB/sorcery.git'
-gem 'bootstrap-sass'
 gem 'htmlentities'
 
 gem 'configatron'

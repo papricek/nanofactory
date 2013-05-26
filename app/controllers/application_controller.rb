@@ -8,6 +8,11 @@ class ApplicationController < ActionController::Base
     @current_site ||= Site.find_by_host(request.host)
   end
 
+  helper_method :administrators_computer?
+  def administrators_computer?
+    true
+  end
+
   def not_authenticated(message = I18n.t('sessions.not_authenticated'))
     redirect_to root_path, alert: message
   end
