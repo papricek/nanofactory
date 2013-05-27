@@ -26,10 +26,9 @@ set :normalize_asset_timestamps, false
 after :deploy do
   #deploy.bundle_install
   site.create_symlinks
-  site.precompile_assets
-  passenger.restart
+  #site.precompile_assets
   deploy.cleanup
-  deploy.migrate
+  #deploy.migrate
 end
 
 namespace :deploy do
