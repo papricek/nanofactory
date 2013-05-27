@@ -20,6 +20,8 @@ set :branch, "master"
 set :keep_releases, 10
 #set :deploy_via, :remote_cache
 
+set :normalize_asset_timestamps, false
+
 # Tasks
 after :deploy do
   #deploy.bundle_install
