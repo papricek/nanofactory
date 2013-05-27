@@ -1,3 +1,8 @@
+require 'capistrano-rbenv'
+#set :default_environment, {
+#    'PATH' => "$HOME/.gem/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+#}
+
 # Server
 set :application, "nanofactory"
 set :deploy_to, "/home/papricek/web"
@@ -28,7 +33,7 @@ end
 namespace :deploy do
   desc "run 'bundle install' to install Bundler's packaged gems for the current deploy"
   task :bundle_install, :roles => :app do
-    run "cd #{release_path} && rbenv exec bundle install --without test development"
+    run "bundle install --without test development"
   end
 end
 
