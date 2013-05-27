@@ -1,7 +1,9 @@
+require "bundler/capistrano"
+set :bundle_flags, "--deployment --quiet --binstubs"
+
 set :default_environment, {
     'PATH' => "$HOME/.gem/bin:usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH"
 }
-set (:bundle_cmd) { "#{release_path}/bin/bundle" }
 
 # Server
 set :application, "nanofactory"
