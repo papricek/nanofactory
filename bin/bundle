@@ -1,3 +1,16 @@
 #!/usr/bin/env ruby
-ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
-load Gem.bin_path('bundler', 'bundle')
+
+# old
+#ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
+#load Gem.bin_path('bundler', 'bundle')
+
+require 'rubygems'
+version = ">= 0"
+
+if ARGV.first =~ /^_(.*)_$/ and Gem::Version.correct? $1 then
+  version = $1
+  ARGV.shift
+end
+
+gem 'bundler', version
+load Gem.bin_path('bundler', 'bundle', version)

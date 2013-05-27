@@ -1,6 +1,7 @@
 set :default_environment, {
-    'PATH' => "$HOME/.gem/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+    'PATH' => "$HOME/.gem/bin:usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH"
 }
+set (:bundle_cmd) { "#{release_path}/bin/bundle" }
 
 # Server
 set :application, "nanofactory"
@@ -32,7 +33,7 @@ end
 namespace :deploy do
   desc "run 'bundle install' to install Bundler's packaged gems for the current deploy"
   task :bundle_install, :roles => :app do
-    run "bundle install --without test development"
+    run "rbenv exec bundle install --without test development"
   end
 end
 
