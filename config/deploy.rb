@@ -1,17 +1,14 @@
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
-require "rvm/capistrano"
-
 # Server
 set :application, "nanofactory"
-set :deploy_to, "/var/www/papricek/#{application}"
+set :deploy_to, "/home/papricek/web"
 set :user, "papricek"
 set :use_sudo, false
-set :domain, "r01.avatech.cz"
+set :domain, "88.86.123.227"
 server domain, :app, :web
 role :db, domain, :primary => true
 
 # scm settings
-set :repository, "git@github.com:papricek/nanofactory.git"
+set :repository, "git://github.com/papricek/nanofactory.git"
 set :scm, "git"
 set :scm_verbose, true
 set :branch, "master"
@@ -31,7 +28,7 @@ end
 namespace :deploy do
   desc "run 'bundle install' to install Bundler's packaged gems for the current deploy"
   task :bundle_install, :roles => :app do
-    run "cd #{release_path} && bundle install --without test"
+    run "cd #{release_path} && rbenv exec bundle install --without test development"
   end
 end
 
