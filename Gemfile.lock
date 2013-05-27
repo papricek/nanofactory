@@ -7,6 +7,14 @@ GIT
       oauth (~> 0.4.4)
       oauth2 (~> 0.8.0)
 
+GIT
+  remote: git://github.com/jejacks0n/mercury.git
+  revision: 49835a0d9080886c90f6ec6593be18d77afb0a8c
+  specs:
+    mercury-rails (0.9.0)
+      coffee-rails (>= 3.2.2)
+      railties (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,6 +52,10 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -93,6 +105,12 @@ GEM
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
       rack (~> 1.2)
+    paperclip (3.4.2)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -154,6 +172,8 @@ DEPENDENCIES
   htmlentities
   jbuilder (~> 1.0.1)
   jquery-rails
+  mercury-rails!
+  paperclip
   rails (= 4.0.0.rc1)
   sass-rails (~> 4.0.0.beta1)
   sorcery!

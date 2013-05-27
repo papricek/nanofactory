@@ -14,19 +14,20 @@
   <title><%= current_site.title %></title>
 
   <%= javascript_include_tag "patrikjira.com/all" %>
-  <%= javascript_include_tag "all" %>
   <%= stylesheet_link_tag "patrikjira.com/all" %>
-  <%= stylesheet_link_tag "all" %>
+  <%= stylesheet_link_tag "application" %>
 
   <link rel="shortcut icon" href="<%= site_asset_path "favicon.ico" %>"/>
 
 </head>
-
 <body>
 
 <%= render 'layouts/header' %>
 
+<%= yield %>
+
 <div class="container">
+
 
   <header class="main">
     <a href="http://patrikjira.com/" title="Thats me!" id="logo">
@@ -37,7 +38,6 @@
       <span class="small">web, music, psychology</span>
     </h1>
   </header>
-
 
   <article>
 
@@ -97,6 +97,7 @@
 
 </div>
 <!-- .container -->
+
 
 </body>
 </html>

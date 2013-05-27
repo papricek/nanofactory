@@ -8,6 +8,7 @@ gem 'capistrano'
 gem 'jbuilder', '~> 1.0.1'
 gem 'sorcery', git: 'git://github.com/NoamB/sorcery.git'
 gem 'htmlentities'
+gem 'mercury-rails', git: 'git://github.com/jejacks0n/mercury.git'
 
 gem 'configatron'
 
@@ -17,3 +18,4 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'therubyracer'
 end
+gem 'paperclip'

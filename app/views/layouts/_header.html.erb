@@ -3,9 +3,12 @@
     <div id="corner-navigation">
       <% if logged_in? %>
         <%= link_to t('users.logout'), logout_path %>
+
+        <%= link_to_function is_editing? ? "Editor off" : "Editor on", "document.cookie='editing=#{is_editing? ? 'false' : 'true'}';top.location.href=top.location.href" %>
       <% else %>
         <%= link_to t('users.administration'), login_path %>
       <% end %>
     </div>
   </div>
 <% end %>
+

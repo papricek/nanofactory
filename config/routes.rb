@@ -1,5 +1,11 @@
 Nanofactory::Application.routes.draw do
 
+  mount Mercury::Engine => '/'
+    namespace :mercury do
+      resources :images, only: [:create, :destroy]
+      resources :areas, only: [:create]
+    end
+  Mercury::Engine.routes
   root to: 'pages#index'
 
   resources :users
