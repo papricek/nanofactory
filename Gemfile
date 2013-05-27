@@ -8,7 +8,6 @@ gem 'capistrano'
 gem 'jbuilder', '~> 1.0.1'
 gem 'sorcery', git: 'git://github.com/NoamB/sorcery.git'
 gem 'htmlentities'
-gem 'capistrano-rbenv'
 
 gem 'configatron'
 

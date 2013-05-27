@@ -1,7 +1,6 @@
-require 'capistrano-rbenv'
-#set :default_environment, {
-#    'PATH' => "$HOME/.gem/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-#}
+set :default_environment, {
+    'PATH' => "$HOME/.gem/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+}
 
 # Server
 set :application, "nanofactory"
