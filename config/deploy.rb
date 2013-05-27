@@ -17,7 +17,7 @@ set :keep_releases, 10
 
 # Tasks
 after :deploy do
-  deploy.bundle_install
+  #deploy.bundle_install
   site.create_symlinks
   site.precompile_assets
   passenger.restart
