@@ -43,7 +43,21 @@ $darkGreen: #58752f;
   }
 }
 
+.administration {
+  @include gradient_background;
+  border-bottom: 1px solid #727272;
+  
+  .flash-alert {
+    color: red;
+  }
+  .flash-notice {
+    color: blue;
+  }
+}
+
 .login-form {
+
+  padding-top: 0.5em;
 
   h1 {
     font-size: 1.5em;
@@ -53,23 +67,24 @@ $darkGreen: #58752f;
     margin: auto;
     width: 300px;
     text-align: left;
-    
+
     &.last {
       padding-bottom: 2em;
     }
     label {
       float: left;
-      display:block;
+      display: block;
       width: 70px;
       &.inline-label {
-        width: 130px;
+        width: 120px;
       }
     }
-    
-    .btn { float: right; }
+
+    .btn {
+      float: right;
+      margin-right: 10px;
+    }
   }
-  @include gradient_background;
-  border-bottom: 1px solid #727272;
 
 }
 

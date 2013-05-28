@@ -10,7 +10,7 @@ class UserSessionsController < ApplicationController
       if @user = login(params[:email],params[:password],params[:remember])
         format.html {
           cookies[:editing] = 'true'
-          redirect_back_or_to(:users, :notice => 'Login successfull.') 
+          redirect_to(root_path) 
         }
         format.xml { render :xml => @user, :status => :created, :location => @user }
       else
