@@ -447,6 +447,6 @@ window.Mercury = {
   // ## Debug Mode
   //
   // Turning debug mode on will log events and other various things (using console.debug if available).
-  debug: true
+  debug: false
 
 };

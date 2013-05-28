@@ -5,10 +5,12 @@ class Mercury::AreasController < MercuryController
   # POST /areas.json
   def create
     puts params.inspect
-    @area = Mercury::Area.new(params[:area])
-    @area.host = request.host
-    @area.save
-    respond_with @area
+    params[:content].each do |key, value|
+      @area = Mercury::Area.where(key: key).first_or_initialize
+      @area.content = value[:value]
+      @area.save
+    end
+    render text: ""
   end
 
 end

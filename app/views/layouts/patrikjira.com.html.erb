@@ -34,70 +34,18 @@
       <img src="<%= site_asset_path "logo.jpg" %>" alt="Patrik Jíra">
     </a>
 
-    <h1 class="cz"><span class="big">Patrik Jíra</span>
-      <span class="small">web, music, psychology</span>
+    <h1 class="cz">
+      <span class="big" data-mercury="simple" id="patrikjira_cz_heading"><%= render_area('patrikjira_cz_heading') %></span>
+      <span class="small" data-mercury="simple" id="patrikjira_cz_motto"><%= render_area('patrikjira_cz_motto') %></span>
     </h1>
   </header>
 
-  <article>
-
-    <h2>Who am I</h2>
-
-    <p>While working on websites for almost ten years, my goals in development world changed dramatically. Now it
-      completely evolved in not being technology freak at all, but just a person who focuses only on the result of my
-      efforts. <br><br>I work on projects, where both the process of creation and satisfied users can make me happy.</p>
-
-    <h2>My tools & interests</h2>
-
-    <ul>
-      <li>Ruby, Ruby on Rails (TDD), JavaScript (jQuery), HTML(5), CSS(3), accessibility, usability. And education
-        others in all of these areas.
-      </li>
-      <li>Music (tenor and soprano sax), gastronomy, wine, psychology, philosophy.</li>
-
-    </ul>
-
-    <h2>Currently working on</h2>
-
-    <ul>
-      <li>I help <a href="http://jankubr.com">Jan Kubr</a> with&nbsp;<a href="http://goldengate.cz">GoldenGate.cz</a>
-      </li>
-      <li>With <a href="http://honzasterba.cz">Honza Štěrba</a> we drive <br> „A little different wine store“:<br>
-        <a href="http://4vina.cz">4vína.cz</a> and <a href="http://blog.4vina.cz">blog.4vína.cz</a></li>
-    </ul>
-
-
-    <h2>Social me</h2>
-
-    <ul>
-      <li><a href="http://www.linkedin.com/in/patrikjira">LinkedIn &raquo; </a></li>
-      <li><a href="http://twitter.com/#!/papricek">Twitter &raquo; </a></li>
-      <li><a href="http://itartist.patrikjira.com">My work blog &raquo; </a></li>
-    </ul>
-
-
-    <h2>Contact</h2>
-
-    <dl>
-      <dt>Email:</dt>
-      <dd><a href="mailto:info@patrikjira.com">info@patrikjira.com</a></dd>
-    </dl>
-
-    <dl>
-      <dt>Phone:</dt>
-      <dd>777 237 360</dd>
-    </dl>
-
-    <dl>
-      <dt>Address:</dt>
-      <dd>Humpolecká 1886/26, <br>140 00 Praha 4</dd>
-    </dl>
-    <p><a href="http://patrikjira.cz" title="Czech"><img src="<%= site_asset_path "czech-big.png" %>"/></a></p>
+  <article id="patrikjira_cz_content" data-mercury="full">
+    <%= render_area('patrikjira_cz_content').html_safe %>
   </article>
 
 </div>
 <!-- .container -->
-
 
 </body>
 </html>
