@@ -11,12 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130528060643) do
+ActiveRecord::Schema.define(version: 20130528072458) do
 
   create_table "mercury_areas", force: true do |t|
     t.text   "content"
     t.string "key"
   end
+
+  add_index "mercury_areas", ["key"], name: "index_mercury_areas_on_key"
 
   create_table "mercury_images", force: true do |t|
     t.string   "image_file_name"
