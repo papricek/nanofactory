@@ -2,7 +2,9 @@ require "bundler/capistrano"
 set :bundle_flags, "--deployment --quiet --binstubs"
 
 set :default_environment, {
-    'PATH' => "$HOME/.gem/bin:usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH"
+    'GEM_HOME' => "$HOME/.gem",
+    'GEM_PATH' => "$HOME/.gem",
+    'PATH' => "$HOME/.gem/bin:/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH"
 }
 
 # Server
@@ -36,7 +38,7 @@ end
 namespace :deploy do
   desc "run 'bundle install' to install Bundler's packaged gems for the current deploy"
   task :bundle_install, :roles => :app do
-    run "rbenv exec bundle install --without test development"
+    run "bundle install --without test development"
   end
 end
 
