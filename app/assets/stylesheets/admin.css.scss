@@ -3,28 +3,39 @@ $lightGreen: #87c234;
 $darkGreen: #58752f;
 
 #admin-navigation {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
   font-family: Conv_Vegur-Regular;
+  background-color: #c6c6c6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c6c6c6), to(#e2e1e2)); /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #c6c6c6, #e2e1e2); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #c6c6c6, #e2e1e2); /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #c6c6c6, #e2e1e2); /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #c6c6c6, #e2e1e2);
+  border-bottom: 1px solid #727272;
+  border-left: 1px solid #727272;
+
+  text-shadow: 0 1px 0 #EEEEEE;
+  color: #222222;
+
+  a {
+    color: #222222;
+    display: block;
+    float: left;
+    padding: 4px 10px 6px 10px;
+    text-decoration: none;
+    font-size: 0.9em; 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   #corner-navigation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: $lightYellow;
+
     float: right;
-
-    a {
-      display: block;
-      float:left;
-      padding: 7px 20px 12px 20px;
-      font-size: 1.2em;
-    }
-
-  }
-  #wide-navigation {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
 
