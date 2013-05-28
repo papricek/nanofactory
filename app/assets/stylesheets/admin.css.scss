@@ -2,6 +2,14 @@ $lightYellow: #f3f2ad;
 $lightGreen: #87c234;
 $darkGreen: #58752f;
 
+@mixin gradient_background($color1: #c6c6c6, $color2: #e2e1e2) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from($color1), to($color2)); /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, $color1, $color2); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, $color1, $color2); /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, $color1, $color2); /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, $color1, $color2);
+}
+
 #admin-navigation {
 
   position: absolute;
@@ -10,11 +18,8 @@ $darkGreen: #58752f;
 
   font-family: Conv_Vegur-Regular;
   background-color: #c6c6c6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c6c6c6), to(#e2e1e2)); /* Chrome, Safari 4+ */
-  background-image: -webkit-linear-gradient(top, #c6c6c6, #e2e1e2); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-  background-image: -moz-linear-gradient(top, #c6c6c6, #e2e1e2); /* Firefox 3.6-15 */
-  background-image: -o-linear-gradient(top, #c6c6c6, #e2e1e2); /* Opera 11.10-12.00 */
-  background-image: linear-gradient(to bottom, #c6c6c6, #e2e1e2);
+  @include gradient_background;
+
   border-bottom: 1px solid #727272;
   border-left: 1px solid #727272;
 
@@ -27,16 +32,45 @@ $darkGreen: #58752f;
     float: left;
     padding: 4px 10px 6px 10px;
     text-decoration: none;
-    font-size: 0.9em; 
+    font-size: 0.9em;
     &:hover {
       text-decoration: underline;
     }
   }
 
   #corner-navigation {
-
     float: right;
   }
+}
+
+.login-form {
+
+  h1 {
+    font-size: 1.5em;
+    margin: 0 auto 0.5em auto;
+  }
+  .field {
+    margin: auto;
+    width: 300px;
+    text-align: left;
+    
+    &.last {
+      padding-bottom: 2em;
+    }
+    label {
+      float: left;
+      display:block;
+      width: 70px;
+      &.inline-label {
+        width: 130px;
+      }
+    }
+    
+    .btn { float: right; }
+  }
+  @include gradient_background;
+  border-bottom: 1px solid #727272;
+
 }
 
 @font-face {

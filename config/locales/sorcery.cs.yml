@@ -5,9 +5,9 @@ cs:
       text: byli jsme požádáni o znovunastavení Vašeho hesla
       link_text: Pokud chcete heslo skutečně změnit, pokračujte klikněte na tento odkaz
   users:
-    login: Přihlásit
-    logout: Odhlásit
-    profile: Profil
+    login: přihlásit
+    logout: odhlásit
+    profile: profil
     placeholder_email: Email
     placeholder_password: Heslo
     remember_me: Trvalé přihlášení
