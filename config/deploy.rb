@@ -1,15 +1,13 @@
 require "bundler/capistrano"
-set :bundle_flags, "--deployment --quiet --binstubs"
+set :bundle_flags, "--deployment --binstubs"
 
 set :default_environment, {
-    'GEM_HOME' => "$HOME/.gem",
-    'GEM_PATH' => "$HOME/.gem",
-    'PATH' => "$HOME/.gem/bin:/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH"
+    'PATH' => "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH"
 }
 
 # Server
-set :application, "nanofactory"
-set :deploy_to, "/home/papricek/web"
+set :application, "web"
+set :deploy_to, "/home/papricek/#{application}"
 set :user, "papricek"
 set :use_sudo, false
 set :domain, "88.86.123.227"
@@ -28,18 +26,10 @@ set :normalize_asset_timestamps, false
 
 # Tasks
 after :deploy do
-  #deploy.bundle_install
   site.create_symlinks
-  #site.precompile_assets
+  site.precompile_assets
   deploy.cleanup
-  #deploy.migrate
-end
-
-namespace :deploy do
-  desc "run 'bundle install' to install Bundler's packaged gems for the current deploy"
-  task :bundle_install, :roles => :app do
-    run "bundle install --without test development"
-  end
+  deploy.migrate
 end
 
 namespace :site do
