@@ -6,5 +6,6 @@
 /db/*.sqlite3-journal
 /log/*.log
 /tmp
+/public/system
 
 config/database.yml
