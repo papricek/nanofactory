@@ -14,7 +14,7 @@ class UserSessionsController < ApplicationController
         }
         format.xml { render :xml => @user, :status => :created, :location => @user }
       else
-        format.html { flash.now[:alert] = "Login failed."; render :action => "new" }
+        format.html { flash.now[:alert] = t('user_sessions.login_failed'); render :action => "new" }
         format.xml { render :xml => @user.errors, :status => :unprocessable_entity }
       end
     end
@@ -23,7 +23,7 @@ class UserSessionsController < ApplicationController
   def destroy
     logout
     cookies[:editing] = 'false'
-    redirect_to(:users, :notice => 'Logged out!')
+    redirect_to(root_path, :notice => t('user_sessions.logged_out'))
   end
 
 end

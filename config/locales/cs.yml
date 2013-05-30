@@ -1,15 +1,20 @@
 cs:
   users:
     login: přihlásit
+    login_heading: přihlášení
     logout: odhlásit
     profile: profil
-    placeholder_email: Email
-    placeholder_password: Heslo
-    remember_me: Trvalé přihlášení
+    email: email
+    password: heslo
+    remember_me: pamatuj si mě
     administration: "administrace | %{name}"
-  sessions:
+    reset_password: nepamatuji si heslo
+    send_reset_password_email: znovunastavit heslo
+  user_sessions:
     not_authenticated: Nejste přihlášeni
+    logged_out: Odhlášení bylo úspěšné
     not_admin: Nejste přihlášeni jako admin
+    login_failed: Přihlášení se nezdařilo, zadejte prosím správnou kombinaci emailu a hesla.
   mailers:
     common:
       dear_user: Milý uživateli
