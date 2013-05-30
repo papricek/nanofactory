@@ -103,40 +103,40 @@ window.Mercury = {
         insertLink:            ['Link', 'Insert Link', { modal: '/mercury/modals/link.html', regions: ['full', 'markdown'] }],
         insertMedia:           ['Media', 'Insert Media (images and videos)', { modal: '/mercury/modals/media.html', regions: ['full', 'markdown'] }],
         insertTable:           ['Table', 'Insert Table', { modal: '/mercury/modals/table.html', regions: ['full', 'markdown'] }],
-        insertCharacter:       ['Character', 'Special Characters', { modal: '/mercury/modals/character.html', regions: ['full', 'markdown'] }],
-        snippetPanel:          ['Snippet', 'Snippet Panel', { panel: '/mercury/panels/snippets.html' }],
-        sep2:                  ' ',
-        historyPanel:          ['History', 'Page Version History', { panel: '/mercury/panels/history.html' }],
-        sep3:                  ' ',
-        notesPanel:            ['Notes', 'Page Notes', { panel: '/mercury/panels/notes.html' }]
+        insertCharacter:       ['Character', 'Special Characters', { modal: '/mercury/modals/character.html', regions: ['full', 'markdown'] }]
+        //snippetPanel:          ['Snippet', 'Snippet Panel', { panel: '/mercury/panels/snippets.html' }],
+        //sep2:                  ' ',
+        //historyPanel:          ['History', 'Page Version History', { panel: '/mercury/panels/history.html' }],
+        //sep3:                  ' ',
+        //notesPanel:            ['Notes', 'Page Notes', { panel: '/mercury/panels/notes.html' }]
         },
 
       editable: {
         _regions:              ['full', 'markdown'],
         predefined:            {
-          style:               ['Style', null, { select: '/mercury/selects/style.html', preload: true }],
-          sep1:                ' ',
+          //style:               ['Style', null, { select: '/mercury/selects/style.html', preload: true }],
+          //sep1:                ' ',
           formatblock:         ['Block Format', null, { select: '/mercury/selects/formatblock.html', preload: true }],
           sep2:                '-'
           },
         colors:                {
-          backColor:           ['Background Color', null, { palette: '/mercury/palettes/backcolor.html', context: true, preload: true, regions: ['full'] }],
-          sep1:                ' ',
-          foreColor:           ['Text Color', null, { palette: '/mercury/palettes/forecolor.html', context: true, preload: true, regions: ['full'] }],
-          sep2:                '-'
+          //backColor:           ['Background Color', null, { palette: '/mercury/palettes/backcolor.html', context: true, preload: true, regions: ['full'] }],
+          //sep1:                ' ',
+          //foreColor:           ['Text Color', null, { palette: '/mercury/palettes/forecolor.html', context: true, preload: true, regions: ['full'] }],
+          //sep2:                '-'
           },
         decoration:            {
           bold:                ['Bold', null, { context: true }],
           italic:              ['Italicize', null, { context: true }],
           overline:            ['Overline', null, { context: true, regions: ['full'] }],
           strikethrough:       ['Strikethrough', null, { context: true, regions: ['full'] }],
-          underline:           ['Underline', null, { context: true, regions: ['full'] }],
+          //underline:           ['Underline', null, { context: true, regions: ['full'] }],
           sep:                 '-'
           },
         script:                {
-          subscript:           ['Subscript', null, { context: true }],
-          superscript:         ['Superscript', null, { context: true }],
-          sep: '-'
+          //subscript:           ['Subscript', null, { context: true }],
+          //superscript:         ['Superscript', null, { context: true }],
+          //sep: '-'
           },
         justify:               {
           justifyLeft:         ['Align Left', null, { context: true, regions: ['full'] }],
@@ -151,9 +151,9 @@ window.Mercury = {
           sep:                 '-'
           },
         indent:                {
-          outdent:             ['Decrease Indentation'],
-          indent:              ['Increase Indentation'],
-          sep:                 '-'
+          //outdent:             ['Decrease Indentation'],
+          //indent:              ['Increase Indentation'],
+          //sep:                 '-'
           },
         table:                 {
           _context:            true,
