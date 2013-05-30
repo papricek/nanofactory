@@ -5,7 +5,7 @@ configatron.sites = [
     },
     {
         host: 'patrikjira.cz',
-        title: 'Patrik Jíra - minipublikační systém',
+        title: 'Patrik Jíra | www.patrikjira.cz',
         folder: 'patrikjira.com'
     },
     {

@@ -1,0 +1,21 @@
+cs:
+  users:
+    login: přihlásit
+    logout: odhlásit
+    profile: profil
+    placeholder_email: Email
+    placeholder_password: Heslo
+    remember_me: Trvalé přihlášení
+    administration: "administrace | %{name}"
+  sessions:
+    not_authenticated: Nejste přihlášeni
+    not_admin: Nejste přihlášeni jako admin
+  mailers:
+    common:
+      dear_user: Milý uživateli
+      have_a_nice_day: Pěkný den
+    user_mailer:
+      reset_password:
+        subject: "Zapomenuté heslo na %{name}"
+        text: byli jsme požádáni o znovunastavení Vašeho hesla
+        link_text: Pokud chcete heslo skutečně změnit, pokračujte klikněte na tento odkaz
