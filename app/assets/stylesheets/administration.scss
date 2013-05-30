@@ -1,6 +1,6 @@
-$lightYellow: #f3f2ad;
-$lightGreen: #87c234;
-$darkGreen: #58752f;
+$green: #4E7304;
+$dark_red: #7B0404;
+
 
 @mixin gradient_background($color1: #c6c6c6, $color2: #e2e1e2) {
   background-image: -webkit-gradient(linear, left top, left bottom, from($color1), to($color2)); /* Chrome, Safari 4+ */
@@ -48,10 +48,10 @@ $darkGreen: #58752f;
   border-bottom: 1px solid #727272;
   
   .flash-alert {
-    color: red;
+    color: $dark_red;
   }
   .flash-notice {
-    color: blue;
+    color: $green;
   }
 }
 
