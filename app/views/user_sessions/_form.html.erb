@@ -5,15 +5,16 @@
     <%= text_field_tag :email, nil, placeholder: "karel@seznam.cz" %>
   </div>
 
-  <div class="field">
+  <div class="field last">
     <%= label_tag :password, t('users.password') %>
     <%= password_field_tag :password %>
     <%= submit_tag t('users.login'), class: 'btn' %>
   </div>
 
+  <!--
   <div class="field last">
-    <%= label_tag :remember, t("users.remember_me"), class: "inline-label" %>
-    <%= check_box_tag :remember %>
-  </div>
+    <%#= label_tag :remember, t("users.remember_me"), class: "inline-label" %>
+    <%#= check_box_tag :remember %>
+  </div>-->
 
 <% end %>
