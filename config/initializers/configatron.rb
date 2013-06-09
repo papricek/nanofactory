@@ -9,8 +9,13 @@ configatron.sites = [
         folder: 'patrikjira.com'
     },
     {
+        host: 'theriverman.cz',
+        title: 'The Riverman',
+        folder: 'theriverman.cz'
+    },
+    {
         host: 'nanofactory.dev',
         title: 'Nanofactory - minipublikační systém',
-        folder: 'patrikjira.com'
+        folder: 'theriverman.cz'
     }
 ]

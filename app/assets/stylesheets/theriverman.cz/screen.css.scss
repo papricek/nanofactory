@@ -1,0 +1,172 @@
+$dark_grey: #1a1a18;
+$white: #ffffff;
+$blue: #3a62a5;
+$grey: #575656;
+$red: #c82727;
+$green: #5eada6;
+
+body {
+  text-align: left;
+  color: $dark_grey;
+  background: url(image_path('theriverman.cz/background.jpg')) no-repeat $white;
+}
+
+html, body {
+  height: 100%;
+}
+
+.main {
+  padding-left: 45px;
+
+  header {
+    margin-top: 62px;
+  }
+
+  .newsletter {
+
+    margin-top: 65px;
+    width: 522px;
+
+    label {
+      display: inline;
+      color: $white;
+      padding-right: 4px;
+      font-size: 0.9em;
+      font-family: Conv_AmorSerifProBoldItalic, serif;
+    }
+
+    .text-field {
+      width: 185px;
+      height: 12px;
+      &:focus {
+        border-color: $blue;
+      }
+    }
+
+    .submit {
+      position: relative;
+      top: -10px;
+      float: right;
+      display: block;
+      background: url(image_path('theriverman.cz/send.png')) no-repeat left top;
+      width: 235px;
+      height: 39px;
+      line-height: 200px;
+      text-indent: 300px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 0;
+
+      &:hover {
+        background-position: 0 -39px;
+      }
+    }
+
+  }
+  .content {
+    color: $dark_grey;
+    width: 245px;
+    margin-top: 55px;
+
+    p {
+      font-size: 0.9em;
+      line-height: 1.8em;
+      font-family: Conv_AmorSerifProBoldItalic, serif;
+      margin-bottom: 30px;
+    }
+  }
+
+  .big-link {
+    display: block;
+    font-family: Conv_AmorSansPro, sans-serif;
+    color: $white;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  .icons {
+    margin-top: 30px;
+    position: relative;
+    left: -5px;
+  }
+
+  .thanks {
+    color: $grey;
+    font-size: 0.9em;
+    font-family: Conv_AmorSerifProBoldItalic, serif;
+    margin: 60px 0 20px 0;
+
+    p {
+      margin: 0;
+      line-height: 1.5em;
+    }
+
+    .blue {
+      color: $blue;
+    }
+    .red {
+      color: $red;
+    }
+  }
+
+  footer {
+    font-size: 1.4em;
+    color: $grey;
+    font-family: Conv_Junicode-Regular, serif;
+  }
+
+}
+
+@font-face {
+  font-family: 'Conv_AmorSerifProBoldItalic';
+  src: url('/fonts/AmorSerifProBoldItalic.eot');
+  src: local('☺'), url('/fonts/AmorSerifProBoldItalic.woff') format('woff'), url('/fonts/AmorSerifProBoldItalic.ttf') format('truetype'), url('/fonts/AmorSerifProBoldItalic.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_AmorSansProBold';
+  src: url('/fonts/AmorSansProBold.eot');
+  src: local('☺'), url('/fonts/AmorSansProBold.woff') format('woff'), url('/fonts/AmorSansProBold.ttf') format('truetype'), url('/fonts/AmorSansProBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_AmorSansPro';
+  src: url('/fonts/AmorSansPro.eot');
+  src: local('☺'), url('/fonts/AmorSansPro.woff') format('woff'), url('/fonts/AmorSansPro.ttf') format('truetype'), url('/fonts/AmorSansPro.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_Junicode-Regular';
+  src: url('/fonts/Junicode-Regular.eot');
+  src: local('☺'), url('/fonts/Junicode-Regular.woff') format('woff'), url('/fonts/Junicode-Regular.ttf') format('truetype'), url('/fonts/Junicode-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-moz-selection {
+  background: $green;
+  color: $white;
+  text-shadow: none;
+}
+
+::selection {
+  background: $green;
+  color: $white;
+  text-shadow: none;
+}
+
+
+
