@@ -11,6 +11,7 @@ class UserSessionsController < ApplicationController
       if @user && @user.can_access?(current_site) 
         format.html {
           cookies[:editing] = 'true'
+          cookies[:edited] = true
           redirect_to(root_path) 
         }
         format.xml { render :xml => @user, :status => :created, :location => @user }

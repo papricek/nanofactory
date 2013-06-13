@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :administrators_computer?
   def administrators_computer?
-    cookies[:editing].present?
+    cookies[:edited].present?
   end
 
   def not_authenticated(message = I18n.t('sessions.not_authenticated'))
