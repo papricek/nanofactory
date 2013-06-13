@@ -7,8 +7,8 @@ set :default_environment, {
 
 # Server
 set :application, "web"
-set :deploy_to, "/home/papricek/#{application}"
-set :user, "papricek"
+set :deploy_to, "/home/nanofactory/#{application}"
+set :user, "nanofactory"
 set :use_sudo, false
 set :domain, "88.86.123.227"
 server domain, :app, :web
