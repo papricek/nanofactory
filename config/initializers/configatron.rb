@@ -11,11 +11,14 @@ configatron.sites = [
     {
         host: 'theriverman.cz',
         title: 'The Riverman',
-        folder: 'theriverman.cz'
+        folder: 'theriverman.cz',
+        newsletter_recipient_created_subject: 'The Riverman: Animal Spirits',
+        email: 'rokosky-syta@gmail.com'
     },
     {
         host: 'nanofactory.dev',
         title: 'Nanofactory - minipublikační systém',
-        folder: 'theriverman.cz'
+        folder: 'theriverman.cz', 
+        newsletter_recipient_created_subject: 'The Riverman: Animal Spirits'
     }
 ]

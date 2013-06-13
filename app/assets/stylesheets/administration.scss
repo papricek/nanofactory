@@ -46,7 +46,9 @@ $dark_red: #7B0404;
 .administration {
   @include gradient_background;
   border-bottom: 1px solid #727272;
-  
+  .flash {
+    text-align: center;
+  }
   .flash-alert {
     color: $dark_red;
   }

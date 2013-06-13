@@ -1,6 +1,6 @@
 class Site
 
-  attr_accessor :host, :title, :folder
+  attr_accessor :host, :title, :folder, :email, :newsletter_recipient_created_subject
 
   def initialize(host: '', title: '', folder: nil)
     @host = host

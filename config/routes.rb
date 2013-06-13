@@ -11,6 +11,7 @@ Nanofactory::Application.routes.draw do
   resources :users
   resources :user_sessions
   resources :password_resets
+  resources :newsletter_recipients, only: [:create]
 
   get 'login' => 'user_sessions#new', :as => :login
   get 'logout' => 'user_sessions#destroy', :as => :logout

@@ -28,14 +28,17 @@
     <a href="/" title="The Riverman" id="logo">
       <img src="<%= site_asset_path "logo.png" %>">
     </a>
+
   </header>
 
   <div class="newsletter">
-    <%= form_tag '/newsletter' do %>
-      <%= label_tag :email, "email:" %>
-      <%= text_field_tag :email, nil, placeholder: "karel@seznam.cz", class: 'text-field' %>
-      <%= submit_tag "Poslat", class: 'submit' %>
+
+    <%= form_for NewsletterRecipient.new, method: :post do |t| %>
+      <%= t.label :email, "email:" %>
+      <%= t.text_field :email, class: 'text-field' %>
+      <%= t.submit "Poslat", class: 'submit' %>
     <% end %>
+
   </div>
 
   <article id="theriverman_cz_content" data-mercury="full" class="content">
@@ -52,11 +55,11 @@
   <%= link_to "www.theriverman.cz", "/", class: 'big-link' %>
 
   <article class="icons">
-    <%= link_to image_tag('theriverman.cz/youtube-icon.png'), "" %>
-    <%= link_to image_tag('theriverman.cz/bandpage-icon.png'), "" %>
-    <%= link_to image_tag('theriverman.cz/facebook-icon.png'), "" %>
-    <%= link_to image_tag('theriverman.cz/soundcloud-icon.png'), "" %>
-    <%= link_to image_tag('theriverman.cz/bandzone-icon.png'), "" %>
+    <%= link_to image_tag('theriverman.cz/youtube-icon.png'), "http://www.youtube.com/user/TheRivermanBand" %>
+    <%= link_to image_tag('theriverman.cz/bandcamp-icon.png'), "http://therivermanband.bandcamp.com/" %>
+    <%= link_to image_tag('theriverman.cz/facebook-icon.png'), "http://www.facebook.com/pages/The-Riverman/226823374072519" %>
+    <%= link_to image_tag('theriverman.cz/soundcloud-icon.png'), "https://soundcloud.com/theriverman-1" %>
+    <%= link_to image_tag('theriverman.cz/bandzone-icon.png'), "http://bandzone.cz/theriverman" %>
   </article>
 
   <article class="thanks">
