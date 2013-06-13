@@ -19,6 +19,7 @@ configatron.sites = [
         host: 'nanofactory.dev',
         title: 'Nanofactory - minipublikační systém',
         folder: 'theriverman.cz', 
-        newsletter_recipient_created_subject: 'The Riverman: Animal Spirits'
+        newsletter_recipient_created_subject: 'The Riverman: Animal Spirits',
+        email: 'patrikjira@gmail.com'
     }
 ]

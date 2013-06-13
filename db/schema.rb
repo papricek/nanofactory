@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130613122027) do
+ActiveRecord::Schema.define(version: 20130613135000) do
 
   create_table "mercury_areas", force: true do |t|
     t.text   "content"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20130613122027) do
     t.datetime "last_logout_at"
     t.datetime "last_activity_at"
     t.boolean  "admin",                           default: false
+    t.string   "site"
   end
 
   add_index "users", ["activation_token"], name: "index_users_on_activation_token"

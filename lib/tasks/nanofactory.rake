@@ -1,10 +1,11 @@
 namespace :nanofactory do
 
   desc "create or update user"
-  # Create user:      rake nanofactory:create_user[sasa@seznam.cz,123456]
+  # Create user:      rake nanofactory:create_user[sasa@seznam.cz,123456,theriverman.cz]
   # Change password:  rake nanofactory:create_user[sasa@seznam.cz,654321]
-  task :create_user, [:email, :password] => :environment do |task, args|
+  task :create_user, [:email, :password, :site] => :environment do |task, args|
     user = User.where(email: args.email).first_or_initialize
+    user.site = args.site
     user.password = args.password
     user.save!
     if user.created_at_changed?

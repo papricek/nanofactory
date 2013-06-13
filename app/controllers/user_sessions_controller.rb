@@ -7,7 +7,8 @@ class UserSessionsController < ApplicationController
 
   def create
     respond_to do |format|
-      if @user = login(params[:email],params[:password],params[:remember])
+      @user = login(params[:email],params[:password],params[:remember])
+      if @user && @user.can_access?(current_site) 
         format.html {
           cookies[:editing] = 'true'
           redirect_to(root_path) 

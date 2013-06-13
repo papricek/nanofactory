@@ -2,10 +2,12 @@ class Site
 
   attr_accessor :host, :title, :folder, :email, :newsletter_recipient_created_subject
 
-  def initialize(host: '', title: '', folder: nil)
-    @host = host
-    @title = title
-    @folder = folder || host
+  def initialize(hash)
+    @host = hash[:host]
+    @title = hash[:title]
+    @folder = hash[:folder] || host
+    @email = hash[:email]
+    @newsletter_recipient_created_subject = hash[:newsletter_recipient_created_subject]
   end
   
   def self.find_by_host(host)
