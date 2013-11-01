@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Conv_OpenSans-CondLight';
+  src: url('fonts/OpenSans-CondLight.eot');
+  src: local('☺'), url('/fonts/OpenSans-CondLight.woff') format('woff'), url('/fonts/OpenSans-CondLight.ttf') format('truetype'), url('/fonts/OpenSans-CondLight.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.thumbnail {
+	box-shadow: none;
+	border: none;
+}
+address {
+	font-family: 'Conv_OpenSans-CondLight', Verdana, sans-serif;
+	font-weight: normal;
+	text-align:right;
+	a { color: #333; }
+}
+
+h1, h2, h3, h4, h5 {  
+  font-family: 'Conv_OpenSans-CondLight', Verdana, sans-serif;
+  font-weight: normal;
+  a { color: #333; }
+}
+
+h1 { 
+	span { float: right; font-size: 0.7em; }
+	a:hover { color: #333; }
+}
+
+hr.small { margin: 0; border-color: #999; }
+.theme-icon { float: left; margin: 5px 10px 5px 0;}
+
+@media (max-width: 760px) { 
+	.thumbnail {
+		h4, p { text-align: center; }
+	}
+}
+

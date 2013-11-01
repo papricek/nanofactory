@@ -14,5 +14,9 @@ configatron.sites = [
         folder: 'theriverman.cz',
         newsletter_recipient_created_subject: 'The Riverman: Animal Spirits',
         email: 'rokosky-syta@gmail.com'
+    },
+    {
+        host: 'danielavitovska.cz',
+        title: 'Daniela Vítovská'
     }
 ]
