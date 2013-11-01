@@ -32,12 +32,12 @@
     </a>
 
     <h1 class="cz">
-      <span class="big" data-mercury="simple" id="patrikjira_com_heading"><%= render_area('heading') %></span>
-      <span class="small" data-mercury="simple" id="patrikjira_com_motto"><%= render_area('motto') %></span>
+      <span class="big" data-mercury="simple" id="<%= current_site.key_prefix %>heading"><%= render_area('heading') %></span>
+      <span class="small" data-mercury="simple" id="<%= current_site.key_prefix %>motto"><%= render_area('motto') %></span>
     </h1>
   </header>
 
-  <article id="patrikjira_com_content" data-mercury="full">
+  <article id="<%= current_site.key_prefix %>content" data-mercury="full">
     <%= render_area('content').html_safe %>
   </article>
 
